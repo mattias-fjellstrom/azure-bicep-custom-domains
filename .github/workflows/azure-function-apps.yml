@@ -1,0 +1,18 @@
+name: Build azure-function-apps
+
+on:
+  push:
+    paths:
+      - .github/workflows/azure-function-apps.yml
+      - azure-function-apps/**
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: azure-function-apps
+    steps:
+      - uses: actions/checkout@v2
+      - run: az bicep build --file main.bicep
