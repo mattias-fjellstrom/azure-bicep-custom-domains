@@ -39,7 +39,7 @@ The `main.bicep` template is deployed to the subscription scope. A new resource 
 
 Go to the deployed Static Web App resource in Azure to verify that the custom domain has been created. Click on _Custom domains_ in the left hand menu.
 
-![Custom Domain](./assets/customDomain.png)
+![Custom Domain](./assets/customdomain.png)
 
 Open the custom domain in a browser to verify that it works (not that it can take a few minutes before it works correctly).
 
